@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/Minecraft-C.dir/src/main.cpp.o" "CMakeFiles/Minecraft-C.dir/src/GameEngine/OPENGL-WINDOW-ENGINE.cpp.o" "CMakeFiles/Minecraft-C.dir/src/Minecraft/MinecraftDataNode.cpp.o" -o Minecraft-C  libGLAD.a external/glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so 
