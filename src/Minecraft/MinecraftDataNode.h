@@ -17,10 +17,23 @@ class Minecraft{
         string gameName = "Minecraft C++ Version";
         string  graphicsAPI;
 
+    typedef string Texture;
+    
+    struct BlockType{
+        int id;
+        string name;
+        Texture x1, x2, x3, x4, x5, x6;
+        int durability;
+    };
+
     struct Block{
         int x, y, z;
-        char blockType[3];
+        BlockType Block;
     }; 
+
+    struct Chunk{
+        Block blocks[16][16][16];
+    };
     //Struktura null blocków na bazie których będziemy 
     //definiować kolejne chunki biomy wioski etc
 
