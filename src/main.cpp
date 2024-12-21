@@ -1,6 +1,8 @@
 #include "GameEngine/OPENGL-WINDOW-ENGINE.h"
 #include "Minecraft/MinecraftDataNode.h"
 #include "main.h"
+
+
 #include <iostream>
 #include <string>
 
@@ -40,6 +42,7 @@ int main() {
 
     // Set camera position
     gameEngine.setCamera(glm::vec3(0.0f, 5.0f, 20.0f), glm::vec3(0.0f, 0.0f, -1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    // TODO: check camera creation and shaders loading
 
     // Start the render loop
     gameEngine.startRenderLoop([&]() {
@@ -71,7 +74,7 @@ int main() {
 // Helper function to load shaders and set up the terrain
 void setupShadersAndTerrain(OpenGL_GEW& engine, unsigned int& shaderProgram, unsigned int& terrainVAO) {
     // Load shaders
-    shaderProgram = loadShaders("shaders/vertexShader.glsl", "shaders/fragmentShader.glsl");
+    shaderProgram = loadShaders("shaders/vertexShader.glsl", "shaders/fragmentShader.glsl");//Check shaders path
 
     // Generate terrain
     terrainVAO = generateTerrain(10, 1.0f);

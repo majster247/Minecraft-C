@@ -3,7 +3,7 @@
 using namespace std;
 
 Minecraft::Minecraft(){
-    // Constructor
+    cout<<"Minecraft constructor linked"<<endl;
 }
 
 Minecraft::~Minecraft(){

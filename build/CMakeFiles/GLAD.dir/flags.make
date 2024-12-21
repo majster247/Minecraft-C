@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/majster/Desktop/Projects/2DGame/Minecraft-C/external/glad/include
 
-C_FLAGS = -g
+C_FLAGS = 
 
